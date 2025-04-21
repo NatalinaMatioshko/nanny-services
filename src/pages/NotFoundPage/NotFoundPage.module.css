@@ -1,0 +1,90 @@
+.container {
+  min-height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 2rem 4rem;
+  height: 80vh;
+}
+
+.errorCode {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #103931;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0 8px 20px rgba(16, 57, 49, 0.2);
+}
+
+.errorTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #11101c;
+  margin: 1rem 0;
+}
+
+.errorDescription {
+  font-size: 1.2rem;
+  color: rgba(17, 16, 28, 0.5);
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.errorActions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.homeLink {
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: #103931;
+  color: #fbfbfb;
+  border: none;
+}
+
+.homeLink:hover {
+  background-color: #1a5c4f;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caregiversLink {
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #103931;
+  border: 1px solid #103931;
+}
+
+.caregiversLink:hover {
+  background-color: rgba(16, 57, 49, 0.05);
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  .errorActions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .homeLink,
+  .caregiversLink {
+    padding: 0.7rem 1.8rem;
+  }
+}

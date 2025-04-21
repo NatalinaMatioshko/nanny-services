@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 100px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #103931;
+  background-color: rgba(16, 57, 49, 0.2);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #11101c;
+}
+
+.rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #11101c;
+}
+
+.comment {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(17, 16, 28, 0.5);
+}

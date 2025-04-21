@@ -1,0 +1,187 @@
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 22px;
+  max-width: 1184px;
+  border-radius: 24px;
+  background-color: #fbfbfb;
+  padding: 24px;
+}
+
+.imageContainer {
+  border: 2px solid rgba(16, 57, 49, 0.2);
+  border-radius: 30px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 15px;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.status {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+}
+
+.bookmarkButton {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 16px;
+}
+
+.position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8a8a89;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #11101c;
+  margin-bottom: 10px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metaItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #11101c;
+}
+
+.priceHighlight {
+  color: #38cd3e;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.about {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(17, 16, 28, 0.5);
+  margin-bottom: 12px;
+}
+
+.readMoreButton {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #11101c;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.readMoreButton:hover {
+  color: #103931;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.bookButton {
+  border-radius: 30px;
+  padding: 14px 28px;
+  border: none;
+  background-color: #103931;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bookButton:hover {
+  background-color: #1a5c4f;
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .meta {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  .name {
+    margin-bottom: 0;
+  }
+
+  .meta {
+    margin-right: 70px;
+  }
+
+  .metaItem:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -16px;
+    width: 1px;
+    background-color: rgba(17, 16, 28, 0.2);
+  }
+}

@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1184px;
+}
+
+.loadMoreButton {
+  border-radius: 30px;
+  border: none;
+  padding: 14px 40px;
+  background-color: #103931;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  margin: 64px auto 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: #1a5c4f;
+  transform: translateY(-2px);
+}

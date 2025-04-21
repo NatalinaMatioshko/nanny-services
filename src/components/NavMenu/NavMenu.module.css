@@ -1,0 +1,237 @@
+.header {
+  background-color: #103931;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 14px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  border-radius: 30px;
+  max-width: 1376px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.center {
+  display: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  color: #fbfbfb;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+.navLink.active::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  bottom: -14px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #fbfbfb;
+}
+
+.loginBtn {
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  border: 1px solid #fbfbfb;
+}
+
+.registerBtn {
+  border-color: transparent;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #103931;
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registerBtn:hover {
+  color: #103931;
+  background-color: #fbfbfb;
+}
+
+.mobileButton {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #fbfbfb;
+}
+
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobileMenu {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-color: #103931;
+  padding: 80px 30px 30px;
+  overflow-y: auto;
+}
+
+.mobileClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fbfbfb;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.mobileLink {
+  color: #fbfbfb;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.mobileLink.active {
+  font-weight: 700;
+}
+
+.mobileButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.authContainer {
+  padding: 44px 24px;
+}
+
+.authTitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #11101c;
+  margin-bottom: 20px;
+}
+
+.authDescription {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(17, 16, 28, 0.5);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .right {
+    gap: 32px;
+  }
+
+  .navMenu {
+    gap: 40px;
+  }
+
+  .loginBtn,
+  .registerBtn {
+    padding: 14px 39px;
+  }
+
+  .authContainer {
+    padding: 44px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .authContainer {
+    padding: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileButton {
+    display: block;
+  }
+
+  .center,
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

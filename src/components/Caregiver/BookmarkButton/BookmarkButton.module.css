@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s ease;
+  fill: currentColor;
+}
+
+.button:hover .icon {
+  transform: scale(1.1);
+}

@@ -1,0 +1,55 @@
+.button {
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+
+.primary {
+  background-color: #103931;
+  color: #fbfbfb;
+  border: 1px solid transparent;
+}
+
+.primary:hover {
+  background-color: #1a5c4f;
+}
+
+.secondary {
+  background-color: #fbfbfb;
+  color: #103931;
+  border: 1px solid #103931;
+}
+
+.secondary:hover {
+  background-color: rgba(16, 57, 49, 0.2);
+}
+
+.outlined {
+  background-color: transparent;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+}
+
+.outlined:hover {
+  border-color: #fbfbfb;
+}
+
+.lg {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.sm {
+  padding: 10px 20px;
+  font-size: 14px;
+}
